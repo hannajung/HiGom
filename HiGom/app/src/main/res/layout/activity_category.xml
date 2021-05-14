@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoryActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:scaleType="centerCrop">
+
+
+<!-- home image and logo   -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <ImageButton
+            android:id="@+id/homeicon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/homeicon"
+            android:src="@drawable/homeicon"
+            android:scaleType="fitXY"
+            />
+        <TextView
+            android:id="@+id/homelabel"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="HiGom"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+<!--  food & clothes category  -->
+    <LinearLayout
+        android:id="@+id/image_layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/category_animal_image"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/rabbit"
+            android:src="@drawable/rabbit"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/category_fruits_image"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/apple"
+            android:src="@drawable/apple"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+
+<!-- button layer -->
+    <LinearLayout
+        android:id="@+id/button_layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/animalButton"
+            android:layout_width="130dp"
+            android:layout_height="@dimen/answerBtn_height"
+            android:layout_marginRight="25dp"
+            android:text="동물"
+            android:textSize="30dp"/>
+
+        <Button
+            android:id="@+id/fruitButton"
+            android:layout_width="130dp"
+            android:layout_height="@dimen/answerBtn_height"
+            android:layout_marginLeft="25dp"
+            android:text="과일"
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+
+
+<!-- second layer-->
+
+
+
+    <!--  food and clothes category  -->
+    <LinearLayout
+        android:id="@+id/image_layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/category_food_image"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/cake"
+            android:src="@drawable/cake"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/category_clothes_image"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/dress"
+            android:src="@drawable/dress"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+
+    <!-- button layer -->
+    <LinearLayout
+        android:id="@+id/button_layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/foodButton"
+            android:layout_width="130dp"
+            android:layout_height="@dimen/answerBtn_height"
+            android:layout_marginRight="25dp"
+            android:text="음식"
+            android:textSize="30dp"/>
+
+        <Button
+            android:id="@+id/clothButton"
+            android:layout_width="130dp"
+            android:layout_height="@dimen/answerBtn_height"
+            android:layout_marginLeft="25dp"
+            android:text="옷"
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+</LinearLayout>

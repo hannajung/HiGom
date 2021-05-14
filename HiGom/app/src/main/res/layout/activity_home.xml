@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background"
+    >
+
+
+    <ImageView
+        android:layout_marginTop="150dp"
+        android:id="@+id/home_homeicon"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/homeicon"
+        android:src="@drawable/homeicon"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/home_appLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HiGom"
+        android:textSize="50dp"
+        android:textAlignment="center"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/home_startIcon"
+        android:layout_marginTop="30dp"
+        android:layout_width="@dimen/answerBtn_width"
+        android:layout_height="@dimen/answerBtn_height"
+        android:text="시작하기" />
+
+
+</LinearLayout>
